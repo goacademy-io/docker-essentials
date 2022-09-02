@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/4-go-angular/go-angular" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/6-go-angular/go-angular" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/7-go-angular/go-angular" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lesson-4-go-angular/go-angular" vcs="Git" />
   </component>
 </project>
