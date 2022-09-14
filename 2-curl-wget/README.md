@@ -5,7 +5,7 @@
 
 ## Post request
 ```bash
- docker run --rm -it -v "//c//Users/zillanis:/work" curlimages/curl -d@/work/test.json https://httpbin.org/post
+ docker run --rm -it -v "$PWD:/work" curlimages/curl -d@/work/test.json https://httpbin.org/post
 ```
 
 ## Wget
