@@ -1,15 +1,15 @@
 ## create app & run locally
 
 ```bash
-ng new hello-world
-cd hello-world
+ng new ng-app
+cd ng-app
 ng serve
 ```
 
 ## Docker Build and Run
 
 ```bash
-cd hello-world
+cd ng-app
 docker build . -t ng-app
 docker run -d -p 8080:80 --name webapp ng-app
 ```
