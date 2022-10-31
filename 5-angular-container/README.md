@@ -6,22 +6,15 @@ cd hello-world
 ng serve
 ```
 
-## build using dockerfile
-
-copy nginx/default.conf to hello-world
-copy Dockerfile to hello-world
+## Docker Build and Run
 
 ```bash
+cd hello-world
 docker build . -t ng-app
+docker run -d -p 8080:80 --name webapp ng-app
 ```
 
-## access the app from ui
-
-```bash
-http://127.0.0.1:8080
-```
-
-## access using curl container
+## Test the app
 
 ```bash
 docker run -d curlimages/curl http://127.0.0.1:8080

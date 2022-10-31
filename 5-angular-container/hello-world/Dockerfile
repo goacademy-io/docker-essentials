@@ -11,8 +11,7 @@ RUN ./node_modules/.bin/ng build --configuration production --aot --build-optimi
 ## Stage-2 Copy the packaged build to nginx
 FROM nginx:1.16.0-alpine
 LABEL maintainer="info@goacademy.io"
-COPY nginx/default.conf /etc/nginx/conf.d/
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=BUILDER /usr/src/app/dist/hello-world /usr/share/nginx/html/
-EXPOSE 8080 8443
+EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
