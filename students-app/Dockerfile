@@ -1,6 +1,6 @@
 FROM node:12.11 AS ANGULAR_BUILD
 RUN npm install -g @angular/cli@8.3.12
-COPY go-angular/webapp /webapp
+COPY webapp /webapp
 WORKDIR webapp
 RUN npm install && ng build --prod
 

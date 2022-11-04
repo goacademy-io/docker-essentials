@@ -3,4 +3,4 @@ LABEL maintainer="info@goacademy.io"
 WORKDIR goacademy
 COPY . .
 COPY default.conf /etc/nginx/conf.d/
-EXPOSE 80
+EXPOSE 7070
