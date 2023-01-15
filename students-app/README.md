@@ -13,6 +13,6 @@
     ```
 4. Start the application container:
     ```shell script
-    docker run -d -p 8080:8080 -e DB_PASS='postgres' --net=students-net students-app
+    docker run -d --name=students-app -p 8080:8080 -e DB_HOST='students-app' -e DB_USER='postgres' -e DB_PASS='postgres' -e DB_NAME='postgres' --net=students-net students-app
     ```
 Access the application via http://localhost:8080
