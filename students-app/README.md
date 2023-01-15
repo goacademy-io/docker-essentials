@@ -5,7 +5,7 @@
     ```
 2. Start the DB:
     ```shell script
-    docker run -d -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=students --name students-db --net=students-net postgres:11.5
+    docker run -d -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=students --name students-db --net=students-net postgres:14.5
     ```
 3. Build the application image:
     ```shell script

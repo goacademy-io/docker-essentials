@@ -27,7 +27,7 @@ func (a *App) start() {
 	a.r.HandleFunc("/students", a.addStudent).Methods("POST")
 	a.r.HandleFunc("/students/{id}", a.updateStudent).Methods("PUT")
 	a.r.HandleFunc("/students/{id}", a.deleteStudent).Methods("DELETE")
-	a.r.PathPrefix("/").Handler(http.FileServer(http.Dir("./webapp/dist/webapp/")))
+	a.r.PathPrefix("/").Handler(http.FileServer(http.Dir("./usr/src/app/dist/webapp/")))
 	log.Fatal(http.ListenAndServe(":8080", a.r))
 }
 
